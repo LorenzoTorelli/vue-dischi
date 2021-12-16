@@ -21,5 +21,8 @@ export default {
 
 <style lang="scss">
 @import url('./assets/Gllobal.scss');
-
+  #App {
+    max-width: 1200px;
+    // height: 100vh;
+  }
 </style>
