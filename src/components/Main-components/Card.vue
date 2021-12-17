@@ -21,15 +21,15 @@ export default {
 
 <style lang="scss" scoped>
     .card {
-        width: 200px;
+        // width: 200px;
         padding: 20px;
-        margin: 20px;
+        // margin: 20px;
         text-align: center;
         background-color: rgb(46,58,70);
 
         
         img {
-               width: 150px;
+               width: 100%;
                margin-bottom: 15px;
         }
 
