@@ -38,6 +38,7 @@ export default {
             .then((response) =>{
                 // handle success
                this.schede = response.data.response;
+               
             })
             .catch(function (error) {
                 // handle error
@@ -54,9 +55,10 @@ export default {
     computed: {
         filtraSchede() {
             return this.schede.filter( (e) => {
-                return e.genre.toLowerCase().includes(this.filtro.toLowerCase())
+                if (e.genre.toLowerCase().includes(this.filtro.toLowerCase())) {
+                return e;
+                }
             })
-            
         }
     }
 }
